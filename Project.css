@@ -1,0 +1,347 @@
+/* עיצוב כללי */
+td {
+    border: 2px solid black;
+    border-Collapse: collapse;
+    width: 60px;
+}
+
+table {
+    border: 10px solid black;
+    border-Collapse: collapse;
+    font-Size: 40px;
+    font-Family: fantasy;
+    background-Color: white;
+}
+
+input {
+    border: 0px;
+    width: 50px;
+    font-Size: 40px;
+    color: goldenrod;
+    font-Family: fantasy;
+}
+
+/* opening page */
+#openingbody {
+    position: absolute;
+    height:100% ;
+    width:100% ;
+    text-align: center;
+    background-image: url(c3.jpg);
+    /* background-position: center; */
+    background-position-x: center;
+    /* background-position-y: center; */
+    background-repeat: no-repeat;
+}
+
+#crownH1 {
+    font-size: 80px;
+    text-shadow: 7px 0px gold;
+}
+
+#crownImg {
+    height: 90px;
+    width: 90px;
+}
+
+.inputs {
+    height: 45px;
+    width: 300px;
+    padding-left: 100px;
+    font-size: 40px;
+    border: 8px goldenrod double;
+}
+
+h3 {
+    color: brown;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: goldenrod;
+    font-style: oblique;
+}
+
+.buttons {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: lightgrey;
+    border: 8px white double;
+    animation: color-me-in 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes color-me-in {
+    from {
+        background: lightgray;
+        ;
+    }
+
+    to {
+        background: goldenrod;
+    }
+}
+
+#crownAnimation {
+    height: 50px;
+    width: 50px;
+    animation: king 6s infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes king {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    20% {
+        top: 0%;
+        left: 15%;
+    }
+
+    40% {
+        top: 80%;
+        left: 15%;
+    }
+
+    60% {
+        top: 80%;
+        left: 80%;
+    }
+
+    80% {
+        top: 0%;
+        left: 80%;
+    }
+    100% {
+        top: 0%;
+        left: 90%;
+    }
+}
+#crownAnimation1{
+    position: absolute;
+    animation: king1 5s infinite;
+    animation-direction: alternate;
+}
+@keyframes king1 {
+    from {
+        top: 25%;
+        left: 25%;
+    }
+
+    to {
+        top: 80%;
+        left: 25%;
+    }
+}
+#crownAnimation2{
+    position: absolute;
+    animation: king2 5s infinite;
+    animation-direction: alternate;
+}
+@keyframes king2 {
+    from {
+        top: 80%;
+        left: 70%;
+    }
+
+    to {
+        top: 25%;
+        left: 70%;
+    }
+}
+
+/* preperation page */
+#preperationbody {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    animation: color-me-in_2 6s 1;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes color-me-in_2 {
+    0% {
+        background: white;
+    }
+
+    50% {
+        background: orange;
+    }
+
+    75% {
+        background: black;
+    }
+    100% {
+        background: white;
+    }
+}
+
+#preperationDiv {
+    padding-bottom: 60px;
+    margin-top: 5%;
+    width: 40%;
+    text-align: center;
+    border: 5px gold dashed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#userNamePreperaton {
+    margin-top: 10px;
+    font-size: 50px;
+    color: goldenrod;
+}
+
+#welcome {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+#levelDifficulty {
+    margin-top: 10px;
+    font-size: 50px;
+    color: brown;
+}
+
+#threeButtonsDiv {
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.threeButtons {
+    height: 90px;
+    width: 90px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+#b1 {
+    background-color: rgb(73, 123, 73);
+}
+
+#b2 {
+    background-color: rgb(131, 131, 60)
+}
+
+#b3 {
+    background-color: rgb(136, 71, 71);
+}
+
+#backLink {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* the game page */
+
+#theGameBody {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(sudokubackgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newbuttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    right: 10%;
+    top: 36%;
+}
+
+.newThreeButtons {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 8px;
+    margin: 10%;
+}
+
+#h1TheGame {
+    margin-top: 5px;
+    font-size: 80px;
+    font-family: fantasy;
+    font-weight:lighter;
+    margin-bottom: 10px;
+    background: none;
+    animation: color-me-in_3 2s 2;
+}
+
+@keyframes color-me-in_3 {
+    from {
+        color: black;
+    }
+
+    to {
+        color: goldenrod;
+    }
+}
+
+#again {
+    margin-top: 30px;
+    margin-left: 70px;
+    background-color: rgb(177, 170, 110);
+    width: 120px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: fantasy;
+}
+
+#finish {
+    margin-top: 30px;
+    margin-right: 70px;
+    background-color: rgb(155, 196, 155);
+    width: 120px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: fantasy;
+}
+
+#answerTrue {
+    left: 43%;
+    top: 35%;
+    position: absolute;
+    display: none;
+    color: green;
+    font-family:'Times New Roman', Times, serif;
+    border: 5px double green;
+    background-color: white;
+    padding: 3%;
+}
+
+#answerFalse {
+    left: 43%;
+    top: 35%;
+    position: absolute;
+    display: none;
+    color: darkred;
+    font-family:'Times New Roman', Times, serif;
+    border: 5px double darkred;
+    background-color: white;
+    padding: 3%;
+}
+

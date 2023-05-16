@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sudoku Game Screen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Project.css'>
+</head>
+
+<body>
+    <!-- עמוד 1 -->
+    <div id="openingbody">
+        <div id="crownAnimation1"><img id="crownImg" src="k1.jpg" alt=""></div>
+        <h1 id="crownH1">KING<img id="crownImg" src="k1.jpg" alt="">SUDOKU</h1>
+        <input type="text" class="inputs" id="in1" placeholder="User Name"><br>
+        <h3 id="inp1Answer"></h3>
+        <input type="password" class="inputs" id="in2" placeholder="Password"><br><br>
+        <h3 id="inp2Answer"></h3>
+        <button onclick="logIn()" class="buttons">Enter The Game</button>
+        <div id="crownAnimation"><img id="crownImg" src="k1.jpg" alt=""></div>
+        <div id="crownAnimation2"><img id="crownImg" src="k1.jpg" alt=""></div>
+    </div>
+
+    <!-- עמוד 2 -->
+
+    <div id="preperationbody">
+        <div id="preperationDiv">
+            <h1 id="welcome">welcome</h1>
+            <p id="userNamePreperaton">Hello </p>
+            <h2 id="levelDifficulty">Choose difficulty level</h3><br>
+                <div id='threeButtonsDiv'>
+                    <button onclick="theGame25easy()" id="b1" class="threeButtons">1</button>
+                    <button onclick="theGame50normal()" id="b2" class="threeButtons">2</button>
+                    <button onclick="theGame75hard()" id="b3" class="threeButtons">3</button>
+                </div>
+        </div>
+    </div>
+    <!-- עמוד 3 -->
+
+    <div id="theGameBody">
+        <div id="newbuttons">
+        <!-- <button onclick="theGame25easyNew()" id="b1" class="newThreeButtons">1</button>
+        <button onclick="theGame50normalNew()" id="b2" class="newThreeButtons">2</button>
+        <button onclick="theGame75hardNew()" id="b3" class="newThreeButtons">3</button> -->
+        </div>
+        <h1 id="h1TheGame">Good Luck</h1>
+        <h1 id="answerTrue">Good Job</h1>
+        <h1 id="answerFalse">Try again</h1>
+
+        <div id="theGame"></div>
+        <!-- <div id="NewGame"></div> -->
+
+        <div id="buttonsTheGame">
+            <button onclick="finish()" id="finish">finish</button>
+            <button onclick="again()" id="again">again</button>
+        </div>
+    </div>
+
+    <script src='project.js'></script>
+</body>
+
+</html>
